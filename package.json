@@ -1,4 +1,7 @@
 {
+  //add github pages info
+  "homepage": "http://pckreitz.github.io/youtube-clone",
+  //end
   "name": "yt-clone",
   "version": "0.1.0",
   "private": true,
@@ -15,6 +18,10 @@
     "youtube-api-search": "0.0.5"
   },
   "scripts": {
+    //more github pages info
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    //end
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -37,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
